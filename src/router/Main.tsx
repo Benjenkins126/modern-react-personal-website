@@ -5,7 +5,7 @@ import Home from '../pages/Home';
 const Main = () => {
     return (
         <Routes>
-             <Route path='/index' element={<Home />} />
+             <Route path='/' element={<Home />} />
         </Routes>
     );
 }

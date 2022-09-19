@@ -5,7 +5,7 @@ interface ContainerProps {
 const Container = (props: ContainerProps) => {
     return (
         <div>
-
+            {props.children}
         </div>
     );
 }

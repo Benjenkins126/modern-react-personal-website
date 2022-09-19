@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import NewsAlert from "../components/pages/home/NewsAlert";
 import PageHeader from "../components/sections/PageHeader";
 
 const Home = () => {
@@ -11,7 +12,7 @@ const Home = () => {
             <PageHeader subpage={false}>
                 <div className="grid grid-cols-2 gap-12">
                     <div>
-                        {/* News Popup */}
+                        <NewsAlert text="Welcome to my new website!" />
                         {/* Page Title */}
                         {/* Description */}
                         {/* Buttons */}
