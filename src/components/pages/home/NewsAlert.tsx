@@ -10,9 +10,9 @@ interface NewsAlertProps {
 const NewsAlert = (props: NewsAlertProps) => {
     return (
         <Link to={props.url ? props.url : ''}>
-            <div>
-                {props.text}
-                <div>
+            <div className="bg-secondary/30 inline-block text-white font-ben font-semibold text-sm p-2 rounded-full mb-4">
+                <span className="leading-6 pl-2.5">{props.text}</span>
+                <div className="text-secondary bg-white text-center inline-block float-right rounded-full w-6 h-6 leading-6 ml-12">
                     <FontAwesomeIcon icon={faArrowRight} />
                 </div>
             </div>

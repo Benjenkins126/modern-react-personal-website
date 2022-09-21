@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import Container from "../components/general/container/Container";
 import GitHubActivity from "../components/pages/home/GitHubActivity";
 import NewsAlert from "../components/pages/home/NewsAlert";
 import PageHeader from "../components/sections/PageHeader";
@@ -38,6 +39,13 @@ const Home = () => {
                     </div>
                 </div>
             </PageHeader>
+            <div className="bg-secondary">
+                <Container>
+                    <div className="grid grid-rows-4 gap-x-6 py-14">
+
+                    </div>
+                </Container>
+            </div>
         </>
     );
 }
