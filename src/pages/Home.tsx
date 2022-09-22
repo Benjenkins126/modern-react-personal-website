@@ -15,8 +15,8 @@ const Home = () => {
     return (
         <>
             <PageHeader subpage={false} activePage="Home">
-                <div className="grid grid-cols-2 gap-12 py-36">
-                    <div>
+                <div className="grid grid-cols-2 gap-12 py-32">
+                    <div className="my-auto">
                         <NewsAlert text="Welcome to my new website!" />
                         <div>
                             <h1 className="font-ben text-6xl font-bold text-white inline-block">Ben Jenkins 👋</h1>
