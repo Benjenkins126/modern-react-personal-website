@@ -19,6 +19,13 @@ module.exports = {
         '305': '305px',
         '578': '578px',
         '586': '586px',
+        '124': '124px'
+      },
+      height: {
+        '40': '40px'
+      },
+      lineHeight: {
+        '40': '40px'
       },
       fontFamily: {
         'ben': ['Metropolis', 'sans-serif', 'system-ui']

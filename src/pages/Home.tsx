@@ -1,5 +1,7 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import PrimaryButton from "../components/general/buttons/PrimaryButton";
+import SecondaryButton from "../components/general/buttons/SecondaryButton";
 import Container from "../components/general/container/Container";
 import GitHubActivity from "../components/pages/home/GitHubActivity";
 import NewsAlert from "../components/pages/home/NewsAlert";
@@ -24,17 +26,8 @@ const Home = () => {
                         <h2 className="font-ben text-6xl font-bold mt-5"><span className="inline-block text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary after:contents[''] after:block after:w-full after:right-0 after:left-0 after:bottom-5 after:relative after:h-5 after:bg-primary/30">Software</span> <span className="inline-block text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary after:contents[''] after:block after:w-full after:right-0 after:left-0 after:bottom-5 after:relative after:h-5 after:bg-primary/30">Developer</span></h2>
                         <p className="font-ben font-medium text-white/75 text-sm leading-8 mb-7 mt-3">Hi, I'm Ben!  Since the age of 13 I have been developing software and websites for hundreds of people around the globe.</p>
                         <div>
-                            {/* Change to generic buttons */}
-                            {/* <button>
-                                <Link to="/portfolio">
-                                    <span>View Work</span>
-                                </Link>
-                            </button>
-                            <button>
-                                <Link to="/contact">
-                                    <span>Contact Me</span>
-                                </Link>
-                            </button> */}
+                            <PrimaryButton name="View Work" url="/portfolio" classes="mr-4" />
+                            <SecondaryButton name="Contact Me" url="/contact" />
                         </div>
                     </div>
                     <div>
