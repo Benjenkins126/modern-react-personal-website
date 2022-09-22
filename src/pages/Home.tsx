@@ -4,6 +4,7 @@ import Container from "../components/general/container/Container";
 import GitHubActivity from "../components/pages/home/GitHubActivity";
 import NewsAlert from "../components/pages/home/NewsAlert";
 import StatisticItem from "../components/pages/home/StatisticItem";
+import Footer from "../components/sections/Footer";
 import PageHeader from "../components/sections/PageHeader";
 
 const Home = () => {
@@ -41,6 +42,8 @@ const Home = () => {
                     </div>
                 </div>
             </PageHeader>
+
+            {/* Pricing Section */}
             <div className="bg-secondary">
                 <Container>
                     <div className="grid grid-rows-4 gap-x-6 py-14">
@@ -48,7 +51,11 @@ const Home = () => {
                     </div>
                 </Container>
             </div>
-            <div className="bg-background-secondary">
+
+            {/* Quality Section */}
+
+            {/* Statistics Section */}
+            <section className="bg-background-secondary">
                 <Container>
                     <div className="grid grid-cols-3 gap-x-6 py-16">
                         <StatisticItem name="Projects Worked On" value="1,000+" />
@@ -56,7 +63,23 @@ const Home = () => {
                         <StatisticItem name="Languages Known" value="5+" />
                     </div>
                 </Container>
-            </div>
+            </section>
+
+            {/* Recent Work Section */}
+
+            {/* Core Skills Section */}
+            <section className="bg-background-secondary">
+                <Container>
+                    <div className="grid grid-cols-6 gap-x-6 py-16">
+
+                    </div>
+                </Container>
+            </section>
+
+            {/* Recent Posts Section */}
+
+            {/* Footer */}
+            <Footer />
         </>
     );
 }
