@@ -3,11 +3,28 @@ import { Link } from "react-router-dom";
 import PrimaryButton from "../components/general/buttons/PrimaryButton";
 import SecondaryButton from "../components/general/buttons/SecondaryButton";
 import Container from "../components/general/container/Container";
+import ParagraphText from "../components/general/text/ParagraphText";
+import SectionTitle from "../components/general/titles/SectionTitle";
+import SectionTitleHighlight from "../components/general/titles/SectionTitleHighlight";
+import SectionTopTitle from "../components/general/titles/SectionTopTitle";
 import GitHubActivity from "../components/pages/home/GitHubActivity";
 import NewsAlert from "../components/pages/home/NewsAlert";
+import PortfolioItem from "../components/pages/home/Portfolio/PortfolioItem";
+import ServiceItem from "../components/pages/home/Services/ServiceItem";
 import StatisticItem from "../components/pages/home/StatisticItem";
 import Footer from "../components/sections/Footer";
 import PageHeader from "../components/sections/PageHeader";
+
+const QualityLaptop = require("../assets/img/quality-computer.png");
+
+const SidneyGFX = require("../assets/img/sidneygfx-portfolio.png");
+const AthenaCMS = require("../assets/img/athenacms-portfolio.png");
+const Controlly = require("../assets/img/controlly-portfolio.png");
+
+const WebDevelopmentIcon = require("../assets/img/website-development-icon.png");
+const TechnicalDevelopmentIcon = require("../assets/img/technical-development-icon.png");
+const SoftwareDevelopmentIcon = require("../assets/img/software-development-icon.png");
+const AndroidDevelopmentIcon = require("../assets/img/android-development-icon.png");
 
 const Home = () => {
     useEffect(() => {
@@ -17,7 +34,7 @@ const Home = () => {
     return (
         <>
             <PageHeader subpage={false} activePage="Home">
-                <div className="grid grid-cols-2 gap-12 py-32">
+                <div className="grid grid-cols-2 gap-x-16 pt-28 pb-32">
                     <div className="my-auto">
                         <NewsAlert text="Welcome to my new website!" />
                         <div>
@@ -39,13 +56,33 @@ const Home = () => {
             {/* Pricing Section */}
             <div className="bg-secondary">
                 <Container>
-                    <div className="grid grid-rows-4 gap-x-6 py-14">
-
+                    <div className="grid grid-cols-4 gap-x-12 py-14">
+                        <ServiceItem icon={WebDevelopmentIcon} name="Website Development" price="200" description="In need for a website for your business? I can do everything from the initial UI design, through to the deployment on the cloud." />
+                        <ServiceItem icon={TechnicalDevelopmentIcon} name="Technical Consultancy" price="500" description="Feel like somethings wrong with your business? I can review your technical processes and report on what can be improved." />
+                        <ServiceItem icon={SoftwareDevelopmentIcon} name="Android/iOS Development" price="500" description="Looking to expand your business to both Android and iOS? Using React Native I can build you an Android/iOS application for your business." />
+                        <ServiceItem icon={AndroidDevelopmentIcon} name="Software Development" price="200" description="Whether it’s an API, custom POS system or an inventory management system, I can build bespoke software for your business." />
                     </div>
                 </Container>
             </div>
 
             {/* Quality Section */}
+            <section className="bg-background">
+                <Container>
+                    <div className="grid grid-cols-2 gap-x-16 py-16">
+                        <div className="my-auto">
+                            <img src={QualityLaptop} alt="Past Work Preview" className="w-502 float-right" draggable="false" />
+                        </div>
+                        <div className="my-auto">
+                            <SectionTopTitle>Quality</SectionTopTitle>
+                            <SectionTitle classes="w-9/12 capitalize leading-48">Quality that <SectionTitleHighlight>can't be matched</SectionTitleHighlight></SectionTitle>
+                            <ParagraphText classes="w-10/12">Having worked for many customers over the years, I have learned how to build products that are well designed and scalable. I’ve learned the full technical process from design to deployment,  ensuring customers receive the full end-to-end service that they deserve.</ParagraphText>
+                            <div>
+                                <PrimaryButton name="View Work" url="/portfolio" classes="mt-6"></PrimaryButton>
+                            </div>
+                        </div>
+                    </div>
+                </Container>
+            </section>
 
             {/* Statistics Section */}
             <section className="bg-background-secondary">
@@ -59,6 +96,22 @@ const Home = () => {
             </section>
 
             {/* Recent Work Section */}
+            <section className="bg-background py-16">
+                <Container>
+                    <SectionTopTitle classes="text-center">Portfolio</SectionTopTitle>
+                    <div className="text-center">
+                        <SectionTitle classes="inline-block after:contents[''] after:block after:w-full after:right-0 after:bottom-5 after:relative after:h-5 after:bg-primary/30">Recent Work</SectionTitle>
+                    </div>
+                    <div className="grid gap-x-8 grid-cols-3 mt-4">
+                        <PortfolioItem name="Controlly" subtitle="Home Control & Automation Application" background={Controlly} />
+                        <PortfolioItem name="Athena CMS" subtitle="Portfolio CMS for freelancers" background={AthenaCMS} />
+                        <PortfolioItem name="SidneyGFX" subtitle="Website Design" background={SidneyGFX} />
+                    </div>
+                    <div className="text-center pt-12">
+                        <PrimaryButton name="View More" url="/portfolio"></PrimaryButton>
+                    </div>
+                </Container>
+            </section>
 
             {/* Core Skills Section */}
             <section className="bg-background-secondary">
