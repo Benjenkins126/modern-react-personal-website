@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
 import PrimaryButton from "../components/general/buttons/PrimaryButton";
 import SecondaryButton from "../components/general/buttons/SecondaryButton";
 import Container from "../components/general/container/Container";
@@ -7,6 +6,7 @@ import ParagraphText from "../components/general/text/ParagraphText";
 import SectionTitle from "../components/general/titles/SectionTitle";
 import SectionTitleHighlight from "../components/general/titles/SectionTitleHighlight";
 import SectionTopTitle from "../components/general/titles/SectionTopTitle";
+import ExperienceItem from "../components/pages/home/Experience/ExperienceItem";
 import GitHubActivity from "../components/pages/home/GitHubActivity";
 import NewsAlert from "../components/pages/home/NewsAlert";
 import PortfolioItem from "../components/pages/home/Portfolio/PortfolioItem";
@@ -114,15 +114,31 @@ const Home = () => {
             </section>
 
             {/* Core Skills Section */}
-            <section className="bg-background-secondary">
+            <section className="bg-background-secondary py-16">
                 <Container>
-                    <div className="grid grid-cols-6 gap-x-6 py-16">
-
+                    <SectionTopTitle>Experience</SectionTopTitle>
+                    <SectionTitle classes="inline-block after:contents[''] after:block after:w-full after:right-0 after:bottom-5 after:relative after:h-5 after:bg-primary/30">Core Skills</SectionTitle>
+                    <div className="grid grid-cols-5 gap-x-6">
+                        <ExperienceItem title="Software Development" items={["PHP", "Node.JS", "C#", "MySQL", "Microsoft SQL", "SQLite", "NoSQL (MongoDB)", "Python (WIP)"]} />
+                        <ExperienceItem title="Website Development" items={["HTML", "CSS/SASS", "JavaScript", "Responsive Design", "SEO", "jQuery", "Bootstrap"]} />
+                        <ExperienceItem title="&nbsp;" items={["React.JS", "Next.JS", "ASP.Net Razor", "Tailwind CSS"]} />
+                        <ExperienceItem title="Other" items={["Microsoft SQL Studio", "Git", "AWS Cloud Architecture", "Linux Shell (Basic)"]} />
                     </div>
                 </Container>
             </section>
 
             {/* Recent Posts Section */}
+            <section className="bg-background py-16">
+                <Container>
+                    <SectionTopTitle classes="text-center">Blog</SectionTopTitle>
+                    <div className="text-center">
+                        <SectionTitle classes="inline-block after:contents[''] after:block after:w-full after:right-0 after:bottom-5 after:relative after:h-5 after:bg-primary/30">Recent Posts</SectionTitle>
+                    </div>
+                    <div className="grid grid-cols-4 gap-x-6">
+                        
+                    </div>
+                </Container>
+            </section>
 
             {/* Footer */}
             <Footer />
