@@ -6,6 +6,7 @@ import ParagraphText from "../components/general/text/ParagraphText";
 import SectionTitle from "../components/general/titles/SectionTitle";
 import SectionTitleHighlight from "../components/general/titles/SectionTitleHighlight";
 import SectionTopTitle from "../components/general/titles/SectionTopTitle";
+import RecentBlogPostItem from "../components/pages/home/Blog/RecentBlogPostItem";
 import ExperienceItem from "../components/pages/home/Experience/ExperienceItem";
 import GitHubActivity from "../components/pages/home/GitHubActivity";
 import NewsAlert from "../components/pages/home/NewsAlert";
@@ -34,7 +35,7 @@ const Home = () => {
     return (
         <>
             <PageHeader subpage={false} activePage="Home">
-                <div className="grid grid-cols-2 gap-x-16 pt-28 pb-32">
+                <div className="grid grid-cols-2 gap-x-16 pt-16 pb-32">
                     <div className="my-auto">
                         <NewsAlert text="Welcome to my new website!" />
                         <div>
@@ -134,8 +135,11 @@ const Home = () => {
                     <div className="text-center">
                         <SectionTitle classes="inline-block after:contents[''] after:block after:w-full after:right-0 after:bottom-5 after:relative after:h-5 after:bg-primary/30">Recent Posts</SectionTitle>
                     </div>
-                    <div className="grid grid-cols-4 gap-x-6">
-                        
+                    <div className="grid grid-cols-4 gap-x-6 mt-4">
+                        <RecentBlogPostItem image={null} title="Will serverless technology be the future?" except="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam" timestamp="21st July 2022" link="/" />
+                        <RecentBlogPostItem image={null} title="Will serverless technology be the future?" except="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam" timestamp="21st July 2022" link="/" />
+                        <RecentBlogPostItem image={null} title="Will serverless technology be the future?" except="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam" timestamp="21st July 2022" link="/" />
+                        <RecentBlogPostItem image={null} title="Will serverless technology be the future?" except="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam" timestamp="21st July 2022" link="/" />
                     </div>
                 </Container>
             </section>

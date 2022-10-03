@@ -42,7 +42,8 @@ module.exports = {
         'background': '#151A2F',
         'background-secondary': '#121522',
         'github-section': '#1C2138',
-        'success-green': '#197C19'
+        'success-green': '#197C19',
+        'image-placeholder': 'rgba(107, 154, 248, .35)'
       },
       boxShadow: {
         'github': '0 15px 50px rgba(0, 0, 0, .11)'
