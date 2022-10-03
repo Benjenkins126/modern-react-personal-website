@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import PrimaryButton from "../general/buttons/PrimaryButton";
 import SecondaryButton from "../general/buttons/SecondaryButton";
 import NavigationItem from "../general/navigation/NavigationItem";
@@ -11,7 +12,9 @@ interface NavigationProps {
 const Navigation = (props: NavigationProps) => {
     return (
         <nav className="pt-12">
-            <img src={Logo} alt="Ben Jenkins Logo" draggable="false" className="w-20 inline-block" />
+            <Link to="/">
+                <img src={Logo} alt="Ben Jenkins Logo" draggable="false" className="w-20 inline-block" />
+            </Link>
             <ul className="float-right mt-5">
                 <NavigationItem name="Home" url="/" active={props.active === "Home" ? true : false} />
                 <NavigationItem name="Portfolio" url="/portfolio" active={props.active === "Portfolio" ? true : false} />
