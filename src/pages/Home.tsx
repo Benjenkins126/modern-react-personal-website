@@ -39,7 +39,7 @@ const Home = () => {
                     <div className="my-auto">
                         <NewsAlert text="Welcome to my new website!" />
                         <div>
-                            <h1 className="font-ben text-6xl font-bold text-white inline-block">Ben Jenkins 👋</h1>
+                            <h1 className="font-ben text-6xl font-bold text-white inline-block wave-effect">Ben Jenkins <span>👋</span></h1>
                         </div>
                         <h2 className="font-ben text-6xl font-bold mt-5"><span className="inline-block text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary after:contents[''] after:block after:w-full after:right-0 after:left-0 after:bottom-5 after:relative after:h-5 after:bg-primary/30">Software</span> <span className="inline-block text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary after:contents[''] after:block after:w-full after:right-0 after:left-0 after:bottom-5 after:relative after:h-5 after:bg-primary/30">Developer</span></h2>
                         <p className="font-ben font-medium text-white/75 text-sm leading-8 mb-7 mt-3">Hi, I'm Ben!  Since the age of 13 I have been developing software and websites for hundreds of people around the globe.</p>
