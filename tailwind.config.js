@@ -46,7 +46,8 @@ module.exports = {
         'image-placeholder': 'rgba(107, 154, 248, .35)'
       },
       boxShadow: {
-        'github': '0 15px 50px rgba(0, 0, 0, .11)'
+        'github': '0 15px 50px rgba(0, 0, 0, .11)',
+        'news-alert': '0 5px 10px rgba(103, 71, 232, .3)'
       }
     },
   },
