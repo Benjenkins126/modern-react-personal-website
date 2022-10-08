@@ -12,8 +12,8 @@ interface RecentBlogPostItemProps {
 
 const RecentBlogPostItem = (props: RecentBlogPostItemProps) => {
     return (
-        <div className="bg-background-secondary rounded-lg">
-            <Link to={props.link}>
+        <div className="bg-background-secondary rounded-lg cursor-none cursor-blink">
+            <Link to={props.link} className="cursor-none">
                 <img src={props.image} alt={props.title} draggable="false" className="bg-image-placeholder w-full h-36 rounded-tl-lg rounded-tr-lg" />
                 <div className="p-6">
                     <h4 className="text-white font-bold font-ben text-base">{props.title}</h4>

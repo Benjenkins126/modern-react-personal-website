@@ -9,8 +9,8 @@ interface PrimaryButtonProps {
 const PrimaryButton = (props: PrimaryButtonProps) => {
     if(props.url) {
         return (
-            <Link to={`${props.url}`} className="cursor-none cursor-blink">
-                <button className={`cursor-none cursor-blink transition-all duration-300 hover:opacity-75 ease-in-out h-11 bg-gradient-to-r from-primary to-secondary w-32 rounded-md font-ben text-white font-bold text-center text-sm  ${props.classes}`}>
+            <Link to={`${props.url}`}>
+                <button className={`transition-all duration-300 hover:opacity-75 ease-in-out h-11 bg-gradient-to-r from-primary to-secondary w-32 rounded-md font-ben text-white font-bold text-center text-sm  ${props.classes}`}>
                     {props.name}
                 </button>
             </Link>
