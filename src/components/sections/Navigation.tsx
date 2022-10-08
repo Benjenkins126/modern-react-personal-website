@@ -12,7 +12,7 @@ interface NavigationProps {
 const Navigation = (props: NavigationProps) => {
     return (
         <nav className="pt-12">
-            <Link to="/">
+            <Link to="/" className="cursor-none cursor-blink">
                 <img src={Logo} alt="Ben Jenkins Logo" draggable="false" className="w-20 inline-block" />
             </Link>
             <ul className="float-right mt-5">
