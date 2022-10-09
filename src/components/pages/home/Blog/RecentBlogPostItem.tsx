@@ -12,13 +12,15 @@ interface RecentBlogPostItemProps {
 
 const RecentBlogPostItem = (props: RecentBlogPostItemProps) => {
     return (
-        <div className="bg-background-secondary rounded-lg cursor-none cursor-blink">
-            <Link to={props.link} className="cursor-none">
+        <div className="bg-background-secondary rounded-lg">
+            <Link to={props.link}>
                 <img src={props.image} alt={props.title} draggable="false" className="bg-image-placeholder w-full h-36 rounded-tl-lg rounded-tr-lg" />
                 <div className="p-6">
                     <h4 className="text-white font-bold font-ben text-base">{props.title}</h4>
                     <p className="font-ben text-medium text-white/50 mt-2.5 mb-3.5 text-xs leading-5">{props.except}</p>
-                    <h6 className="font-ben text-white font-medium text-xs"><FontAwesomeIcon icon={faClock} /> {props.timestamp}</h6>
+                    <h6 className="font-ben text-white font-medium text-xs">
+                        <FontAwesomeIcon icon={faClock} /> {props.timestamp}
+                    </h6>
                 </div>
             </Link>
         </div>
