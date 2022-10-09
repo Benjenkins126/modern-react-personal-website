@@ -12,6 +12,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'home-background': "url('/src/assets/img/home-background.png')",
+        'subpage-background': "url('/src/assets/img/subpage-background.png')"
       },
       width: {
         '1350': '1350px',

@@ -9,7 +9,7 @@ interface PageHeaderProps {
 
 const PageHeader = (props: PageHeaderProps) => {
     return (
-        <header className="bg-home-background bg-cover bg-no-repeat bg-top">
+        <header className={`${props.subpage ? 'bg-subpage-background' : 'bg-home-background'} bg-[length:100%] bg-background bg-no-repeat bg-top`}>
             <Container>
                 {/* Navigation */}
                 <Navigation active={props.activePage} />
