@@ -29,18 +29,18 @@ const Portfolio = () => {
                     </section>
 
                     <div className="grid gap-x-8 grid-cols-3 mt-4 gap-y-12 pb-24">
-                        <PortfolioItem name="Controlly" subtitle="Home Control & Automation Application" background={Controlly} />
-                        <PortfolioItem name="Athena CMS" subtitle="Portfolio CMS for freelancers" background={AthenaCMS} />
-                        <PortfolioItem name="SidneyGFX" subtitle="Website Design" background={SidneyGFX} />
-                        <PortfolioItem name="Controlly" subtitle="Home Control & Automation Application" background={Controlly} />
-                        <PortfolioItem name="Athena CMS" subtitle="Portfolio CMS for freelancers" background={AthenaCMS} />
-                        <PortfolioItem name="SidneyGFX" subtitle="Website Design" background={SidneyGFX} />
-                        <PortfolioItem name="Controlly" subtitle="Home Control & Automation Application" background={Controlly} />
-                        <PortfolioItem name="Athena CMS" subtitle="Portfolio CMS for freelancers" background={AthenaCMS} />
-                        <PortfolioItem name="SidneyGFX" subtitle="Website Design" background={SidneyGFX} />
-                        <PortfolioItem name="Controlly" subtitle="Home Control & Automation Application" background={Controlly} />
-                        <PortfolioItem name="Athena CMS" subtitle="Portfolio CMS for freelancers" background={AthenaCMS} />
-                        <PortfolioItem name="SidneyGFX" subtitle="Website Design" background={SidneyGFX} />
+                        <PortfolioItem link="/" name="Controlly" subtitle="Home Control & Automation Application" background={Controlly} />
+                        <PortfolioItem link="/" name="Athena CMS" subtitle="Portfolio CMS for freelancers" background={AthenaCMS} />
+                        <PortfolioItem link="/" name="SidneyGFX" subtitle="Website Design" background={SidneyGFX} />
+                        <PortfolioItem link="/" name="Controlly" subtitle="Home Control & Automation Application" background={Controlly} />
+                        <PortfolioItem link="/" name="Athena CMS" subtitle="Portfolio CMS for freelancers" background={AthenaCMS} />
+                        <PortfolioItem link="/" name="SidneyGFX" subtitle="Website Design" background={SidneyGFX} />
+                        <PortfolioItem link="/" name="Controlly" subtitle="Home Control & Automation Application" background={Controlly} />
+                        <PortfolioItem link="/" name="Athena CMS" subtitle="Portfolio CMS for freelancers" background={AthenaCMS} />
+                        <PortfolioItem link="/" name="SidneyGFX" subtitle="Website Design" background={SidneyGFX} />
+                        <PortfolioItem link="/" name="Controlly" subtitle="Home Control & Automation Application" background={Controlly} />
+                        <PortfolioItem link="/" name="Athena CMS" subtitle="Portfolio CMS for freelancers" background={AthenaCMS} />
+                        <PortfolioItem link="/" name="SidneyGFX" subtitle="Website Design" background={SidneyGFX} />
                     </div>
                 </Container>
             </PageHeader>

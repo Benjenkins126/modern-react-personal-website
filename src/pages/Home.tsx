@@ -104,9 +104,9 @@ const Home = () => {
                         <SectionTitle classes="inline-block after:contents[''] after:block after:w-full after:right-0 after:bottom-5 after:relative after:h-5 after:bg-primary/30">Recent Work</SectionTitle>
                     </div>
                     <div className="grid gap-x-8 grid-cols-3 mt-4">
-                        <PortfolioItem name="Controlly" subtitle="Home Control & Automation Application" background={Controlly} />
-                        <PortfolioItem name="Athena CMS" subtitle="Portfolio CMS for freelancers" background={AthenaCMS} />
-                        <PortfolioItem name="SidneyGFX" subtitle="Website Design" background={SidneyGFX} />
+                        <PortfolioItem link="" name="Controlly" subtitle="Home Control & Automation Application" background={Controlly} />
+                        <PortfolioItem link="" name="Athena CMS" subtitle="Portfolio CMS for freelancers" background={AthenaCMS} />
+                        <PortfolioItem link="" name="SidneyGFX" subtitle="Website Design" background={SidneyGFX} />
                     </div>
                     <div className="text-center pt-12">
                         <PrimaryButton name="View More" url="/portfolio"></PrimaryButton>
