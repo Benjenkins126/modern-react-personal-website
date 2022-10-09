@@ -18,7 +18,7 @@ const Portfolio = () => {
         <>
             <PageHeader subpage={true} activePage="Portfolio">
                 <div className="pt-24 pb-24">
-                    <h1 className="font font-ben text-6xl font-bold text-white">Portfolio</h1>
+                    <h1 className="font-ben text-6xl font-bold text-white">Portfolio</h1>
                 </div>
 
                 <Container>
@@ -28,7 +28,7 @@ const Portfolio = () => {
                         <PortfolioFilterItem active={false}>Website Development</PortfolioFilterItem>
                     </section>
 
-                    <div className="grid gap-x-8 grid-cols-3 mt-4 gap-y-12 pb-24">
+                    <div className="grid gap-x-8 grid-cols-3 gap-y-12 pb-24">
                         <PortfolioItem link="/" name="Controlly" subtitle="Home Control & Automation Application" background={Controlly} />
                         <PortfolioItem link="/" name="Athena CMS" subtitle="Portfolio CMS for freelancers" background={AthenaCMS} />
                         <PortfolioItem link="/" name="SidneyGFX" subtitle="Website Design" background={SidneyGFX} />

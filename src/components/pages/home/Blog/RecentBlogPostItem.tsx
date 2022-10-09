@@ -8,6 +8,7 @@ interface RecentBlogPostItemProps {
     except: string;
     timestamp: string;
     link: string;
+    source?: string;
 }
 
 const RecentBlogPostItem = (props: RecentBlogPostItemProps) => {
@@ -20,6 +21,7 @@ const RecentBlogPostItem = (props: RecentBlogPostItemProps) => {
                     <p className="font-ben text-medium text-white/50 mt-2.5 mb-3.5 text-xs leading-5">{props.except}</p>
                     <h6 className="font-ben text-white font-medium text-xs">
                         <FontAwesomeIcon icon={faClock} /> {props.timestamp}
+                        <span className="float-right text-secondary">@{props.source}</span>
                     </h6>
                 </div>
             </Link>
