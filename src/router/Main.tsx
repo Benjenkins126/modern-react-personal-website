@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
+import Admin from '../pages/Admin';
 import Blog from '../pages/Blog';
 
 import Home from '../pages/Home';
@@ -12,6 +13,7 @@ const Main = () => {
              <Route path='/portfolio' element={<Portfolio />} />
              <Route path='/blog' element={<Blog />} />
              <Route path='/products' element={<Products />} />
+             <Route path='/admin' element={<Admin />} />
         </Routes>
     );
 }

@@ -26,7 +26,7 @@ const PrimaryButton = (props: PrimaryButtonProps) => {
         );
     } else {
         return (
-            <button className={`${props.classes}`}>
+            <button type="submit" className={`transition-all duration-300 hover:opacity-75 ease-in-out h-11 bg-gradient-to-r from-primary to-secondary w-32 rounded-md font-ben text-white font-bold text-center text-sm  ${props.classes}`}>
                 {props.name}
             </button>
         )
