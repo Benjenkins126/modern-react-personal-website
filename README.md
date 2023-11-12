@@ -1,10 +1,7 @@
-# 2022-website-reactjs
-My 2022 portfolio website source code. This repo requires the 2022-website-api repo to function
+![Modern ReactJS Personal Website](https://i.imgur.com/AFGY8qD.jpg)
+
+# Modern ReactJS Personal Website
+My 2022 portfolio website source code. Feel free to use this for yourself with your project. There's no backend included due to it being incomplete, however the front-end is all ready for use!
 
 Technical Details:
 - Website Front-End: React.JS & TailwindCSS (List of packages will be added after v1 release)
-- API: Node.JS using Express (List of packages will be added after v1 release)
-- Database: MySQL
-- An installation script will be created to setup the back-end API and the React.JS website on an Ubuntu server soon
-
-(Readme and files coming soon)
